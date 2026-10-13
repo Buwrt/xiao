@@ -1,0 +1,78 @@
+=== unzip -l ===
+Archive:  x.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+  1467488  2026-08-28 10:25   Nohello.kpm
+        0  2026-10-14 00:05   XiaoCaiYe/
+     1940  2026-08-28 10:26   XiaoCaiYe/APatch.sh
+     1979  2026-08-28 10:26   XiaoCaiYe/更新keybox.sh
+     1452  2026-08-28 10:26   XiaoCaiYe/更新包名.sh
+     4655  2026-08-28 10:26   action.sh
+        0  2026-08-28 10:26   arm64-v8a/
+        0  2026-10-14 00:05   arm64-v8a/bin/
+   275440  2026-08-28 10:26   arm64-v8a/bin/curl
+    24464  2026-08-28 10:26   arm64-v8a/bin/inotifywait
+     7360  2026-08-28 10:26   arm64-v8a/bin/keycheck
+        0  2026-08-28 10:26   arm64-v8a/etc/
+        0  2026-10-14 00:05   arm64-v8a/etc/ssl/
+   208065  2026-08-28 10:26   arm64-v8a/etc/ssl/cert.pem
+    12324  2026-08-28 10:26   arm64-v8a/etc/ssl/openssl.cnf
+        0  2026-10-14 00:05   arm64-v8a/lib/
+  1374336  2026-08-28 10:26   arm64-v8a/lib/libc++_shared.so
+  4440456  2026-08-28 10:26   arm64-v8a/lib/libcrypto.so.3
+   730872  2026-08-28 10:26   arm64-v8a/lib/libcurl.so
+    33456  2026-08-28 10:26   arm64-v8a/lib/libinotifytools.so
+   164096  2026-08-28 10:26   arm64-v8a/lib/libnghttp2.so
+   818880  2026-08-28 10:26   arm64-v8a/lib/libssl.so.3
+        0  2026-10-14 00:05   cron/
+       69  2026-08-28 10:26   cron/root
+     1212  2026-08-28 10:26   isKeyguardLocked.dex
+      294  2026-08-28 10:26   module.prop
+        0  2026-09-04 11:26   res/
+    94368  2026-08-28 10:25   selinux_hook.kpm
+     2760  2026-08-28 10:26   service.sh
+        0  2026-09-04 11:26   src/
+     3200  2026-08-28 10:32   unlock_run.log
+      522  2026-08-28 10:26   unlock_run.sh
+        0  2026-08-28 10:31   已完成首次配置
+---------                     -------
+  9669688                     33 files
+
+=== tree (dirs + sizes) ===
+      4096  d  extracted
+   1467488  f  extracted/Nohello.kpm
+      4096  d  extracted/XiaoCaiYe
+      1940  f  extracted/XiaoCaiYe/APatch.sh
+      1979  f  extracted/XiaoCaiYe/更新keybox.sh
+      1452  f  extracted/XiaoCaiYe/更新包名.sh
+      4655  f  extracted/action.sh
+      4096  d  extracted/arm64-v8a
+      4096  d  extracted/arm64-v8a/bin
+    275440  f  extracted/arm64-v8a/bin/curl
+     24464  f  extracted/arm64-v8a/bin/inotifywait
+      7360  f  extracted/arm64-v8a/bin/keycheck
+      4096  d  extracted/arm64-v8a/etc
+      4096  d  extracted/arm64-v8a/etc/ssl
+    208065  f  extracted/arm64-v8a/etc/ssl/cert.pem
+     12324  f  extracted/arm64-v8a/etc/ssl/openssl.cnf
+      4096  d  extracted/arm64-v8a/lib
+   1374336  f  extracted/arm64-v8a/lib/libc++_shared.so
+   4440456  f  extracted/arm64-v8a/lib/libcrypto.so.3
+    730872  f  extracted/arm64-v8a/lib/libcurl.so
+     33456  f  extracted/arm64-v8a/lib/libinotifytools.so
+    164096  f  extracted/arm64-v8a/lib/libnghttp2.so
+    818880  f  extracted/arm64-v8a/lib/libssl.so.3
+      4096  d  extracted/cron
+        69  f  extracted/cron/root
+      1212  f  extracted/isKeyguardLocked.dex
+       294  f  extracted/module.prop
+      4096  d  extracted/res
+     94368  f  extracted/selinux_hook.kpm
+      2760  f  extracted/service.sh
+      4096  d  extracted/src
+      3200  f  extracted/unlock_run.log
+       522  f  extracted/unlock_run.sh
+         0  f  extracted/已完成首次配置
+
+=== file count ===
+24

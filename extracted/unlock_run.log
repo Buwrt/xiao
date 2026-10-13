@@ -1,0 +1,55 @@
++ MODDIR=/data/adb/modules/xiaocaiye 
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' true '==' true ']'
++ sleep 1
++ /system/bin/app_process '-Djava.class.path=/data/adb/modules/xiaocaiye/isKeyguardLocked.dex' /system/bin com.rosan.shell.ActiviteJava
++ '[' false '==' true ']'
++ getprop sys.boot_completed
++ '[' 1 '!=' 1 ']'
++ 2>&1 
++ am start -n com.tsng.hidemyapplist/icu.nullptr.hidemyapplist.ui.activity.MainActivity
++ result='Starting: Intent { cmp=com.tsng.hidemyapplist/icu.nullptr.hidemyapplist.ui.activity.MainActivity }' 
++ echo 'Starting: Intent { cmp=com.tsng.hidemyapplist/icu.nullptr.hidemyapplist.ui.activity.MainActivity }'
+Starting: Intent { cmp=com.tsng.hidemyapplist/icu.nullptr.hidemyapplist.ui.activity.MainActivity }
++ grep -qv 'Failure\|Error'
++ echo 'Starting: Intent { cmp=com.tsng.hidemyapplist/icu.nullptr.hidemyapplist.ui.activity.MainActivity }'
++ break
