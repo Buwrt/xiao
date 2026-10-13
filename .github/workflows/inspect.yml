@@ -1,0 +1,46 @@
+name: Inspect release zip
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Download and extract
+        run: |
+          curl -fsSL --retry 5 \
+            "https://github.com/Buwrt/xiao/releases/download/1/XiaoCaiYe.zip" -o x.zip
+          ls -la x.zip
+          rm -rf extracted
+          mkdir -p extracted
+          unzip -o -q x.zip -d extracted || echo "unzip failed"
+
+      - name: Build manifest
+        run: |
+          {
+            echo "=== unzip -l ==="
+            unzip -l x.zip
+            echo
+            echo "=== tree (dirs + sizes) ==="
+            find extracted -printf '%10s  %y  %p\n' | sort -k3
+            echo
+            echo "=== file count ==="
+            find extracted -type f | wc -l
+          } > MANIFEST.txt 2>&1
+          head -200 MANIFEST.txt
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A MANIFEST.txt extracted
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "inspect: extract release zip contents"
+          git pull --rebase origin main
+          git push
